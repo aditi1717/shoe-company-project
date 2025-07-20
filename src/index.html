@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoe-company</title>
     <link href="./output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body class="bg-black text-white">
    <header class="bg-black/70 backdrop-blur-sm section-container flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] z-10">
    <a href="#"> <img src="./images/logo.svg" class=" w-24 md:w-32" alt="no logo">
     <p class=" text-xs  -mt-6 md:text-sm md:-mt-8">The Shoe Company</p>
 </a>
-   <nav class=" space-x-8 hidden md:block lg:space-x-10 lg:text-2xl">
+   <nav  id="nav" class=" hidden flex flex-col md:block bg-[#D9D9D980] md:bg-transparent  p-3 md:p-0 absolute right-4 top-4 md:static  md:space-x-8 ` lg:space-x-10 lg:text-2xl">
+    <img id="open-menu" src="./images/arrowright.svg" class="ml-auto md:hidden " alt="arrow-right">
     <a class="font-bold" href="#hero">Home</a>
     <a class="font-bold" href="#how-it-works">How It Works?</a>
     <a class="font-bold" href="#about">About</a>
     <a class="font-bold" href="#testimonials">Testimonials</a>
     <a class="font-bold" href="#contact">Contact Us</a>
    </nav>
-   <button class="text-5xl md:hidden"> ≡</button>
+
+   <button id="close-menu" class="text-5xl md:hidden" > ≡</button>
    </header >
    <section id="hero" class=" bg-[url('./images/hero-background.png')] bg-cover md:bg-contain bg-no-repeat bg-right pt-32 section-container" >
     <div class=" flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-6xl">
